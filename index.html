@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/rpgui/rpgui.css">
+    <link rel="stylesheet" href="./src//Css/style.css">
+    <script src="./src/rpgui/rpgui.js"></script>
+    
+    <title>Ricardo Halmoguera Portfolio</title>
+</head>
+<body>
+    <div class="rpgui-content">
+        <div class="rpgui-container framed menu" id="Menu">
+            <a class="menu__link" href="#Intro">
+                <button class="rpgui-button" type="button"><p>Intro</p></button>
+            </a>
+            <a class="menu__link" href="#About">
+                <button class="rpgui-button" type="button"><p>About</p></button>
+            </a>
+            <a class="menu__link" href="#Projects">
+                <button class="rpgui-button" type="button"><p>Projects</p></button>
+            </a>
+            <a class="menu__link" href="#Links">
+                <button class="rpgui-button" type="button"><p>Links</p></button>
+            </a>
+        </div>
+        
+        <div class="rpgui-container framed card" id="Intro">
+            <h1 class="card__title">Hero info</h1>
+            <h2>(Intro)</h2>
+            <hr class="golden card__divider">
+            <img class="card__img" src="src/assets/idle.gif">
+            <div class="card__content">
+                <label for="name">Hero name:</label>
+                <input name="name" value="Ricardo" disabled>
+                <label for="class">Hero class:</label>
+                <input name="class" value="Frontend Developer" disabled>
+                <label for="bio">Hero Bio:</label>
+                <textarea name="bio" >As a skilled frontend developer, I create visually appealing, responsive, and interactive websites. Proficient in HTML, CSS, JavaScript, and frontend frameworks, I craft seamless user experiences across platforms with a keen eye for detail and a strong understanding of design principles</textarea>
+            </div>
+        </div>
+
+        <div class="rpgui-container framed card" id="About">
+            <h1 class="card__title">Hero Abilities</h1>
+            <h2>(About)</h2>
+            <hr class="golden card__divider">
+            <div class="card__content">
+                <label for="html">HTML</label>
+                <div id="htmlBar" data-value="0.9" name="html" class="rpgui-progress red"></div>
+                <label for="css">CSS</label>
+                <div id="cssBar" data-value="0.9" name="css" class="rpgui-progress blue" ></div>
+                <label for="js">JS</label>
+                <div id="jsBar" data-value="0.8" name="js" class="rpgui-progress yellow" ></div>
+                <label for="react">React</label>
+                <div id="reactBar" data-value="0.6" name="react" class="rpgui-progress blue" ></div>
+                <label for="git">Git / Github</label>
+                <div id="gitBar" data-value="0.6" name="git" class="rpgui-progress" ></div>
+            </div>
+        </div>
+
+        <div class="rpgui-container framed card" id="Projects">
+            <h1 class="card__title">Hero Achivements</h1>
+            <h2>(Projects)</h2>
+            <hr class="golden card__divider">
+            <div class="container">
+
+                <div class="rpgui-container framed-golden-2 card__project">
+                    <img class=" project__image" src="./src/assets/countries.png" alt="screenshot">
+                    <p class="project__title">Country Finder</p>
+                    <p>Made with:</p>
+                    <ul>
+                        <li>React</li>
+                        <li>React Router</li>
+                        <li>Js</li>
+                        <li>Sass</li>
+                        <li>API</li>
+                    </ul>
+                    <div class="project__links">
+                        <a href="https://github.com/RickHalmoguera/COUNTRIES">
+                            <div class="rpgui-icon potion-red"></div>
+                            <p>Github</p>
+                        </a>
+                        <a href="https://rickhalmoguera.github.io/COUNTRIES/">
+                            <div class="rpgui-icon potion-blue"></div>
+                            <p>Live site</p>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="rpgui-container framed-golden-2 card__project">
+                    <img class=" project__image" src="./src/assets/clock.png" alt="screenshot">
+                    <p class="project__title">Clock and quote generator</p>
+                    <p>Made with:</p>
+                    <ul>
+                        <li>React</li>
+                        <li>Js</li>
+                        <li>Sass</li>
+                        <li>API</li>
+                    </ul>
+                    <div class="project__links">
+                        <a href="https://github.com/RickHalmoguera/CLOCK-REACT">
+                            <div class="rpgui-icon potion-red"></div>
+                            <p>Github</p>
+                        </a>
+                        <a href="https://rickhalmoguera.github.io/CLOCK-REACT/">
+                            <div class="rpgui-icon potion-blue"></div>
+                            <p>Live site</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="rpgui-container framed-golden-2 card__project">
+                    <img class=" project__image" src="./src/assets/tip.png" alt="screenshot">
+                    <p class="project__title">Tip calculator</p>
+                    <p>Made with:</p>
+                    <ul>
+                        <li>React</li>
+                        <li>Js</li>
+                        <li>Css</li>
+                    </ul>
+                    <div class="project__links">
+                        <a href="https://github.com/RickHalmoguera/Tip-calculator-react">
+                            <div class="rpgui-icon potion-red"></div>
+                            <p>Github</p>
+                        </a>
+                        <a href="https://rickhalmoguera.github.io/Tip-calculator-react/">
+                            <div class="rpgui-icon potion-blue"></div>
+                            <p>Live site</p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="rpgui-container framed-golden-2 card__project">
+                    <img class=" project__image" src="./src/assets/rps.png" alt="screenshot">
+                    <p class="project__title">RPS Game</p>
+                    <p>Made with:</p>
+                    <ul>
+                        <li>Vanilla Js</li>
+                        <li>Sass</li>
+                    </ul>
+                    <div class="project__links">
+                        <a href="https://github.com/RickHalmoguera/RPS-Game">
+                            <div class="rpgui-icon potion-red"></div>
+                            <p>Github</p>
+                        </a>
+                        <a href="https://rickhalmoguera.github.io/RPS-Game/">
+                            <div class="rpgui-icon potion-blue"></div>
+                            <p>Live site</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="rpgui-container framed card" id="Links">
+            <h1 class="card__title">Links</h1>
+            <hr class="golden card__divider">
+            <div class="card__links">
+                <a href="https://github.com/RickHalmoguera">
+                    <img src="./src/assets/chest_Github.gif" alt="Github">
+                    <p>Github</p>
+                </a>
+                <a href="https://www.linkedin.com/in/rhalmoguera/">
+                    <img src="./src/assets/chest_Linkedin.gif" alt="Linkedin">
+                    <p>Linkedin</p>
+                </a>
+                <a href="mailto:halmoguerar@gmail.com">
+                    <img src="./src/assets/chest_Gmail.gif" alt="Gmail">
+                    <p>Gmail</p>
+                </a>
+            </div>
+        </div>
+         
+        
+    </div>
+    <a href="#Menu" class="topBtn" id="topBtn">
+        <div class="rpgui-content sticky">
+            <button class="rpgui-button small" type="button"><p>Top</p></button>
+        </div>
+    </a>
+    <script src="./index.js"></script>
+</body>
+
+</html>
