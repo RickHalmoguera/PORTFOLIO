@@ -114,6 +114,10 @@ body {
   align-self: center;
   width: 50%;
 }
+.card__resumes {
+  max-width: 200px;
+  margin: 0 auto;
+}
 .card__content {
   display: flex;
   flex-direction: column;

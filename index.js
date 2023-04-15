@@ -1,5 +1,5 @@
 const topBtn = document.getElementById('topBtn');
-
+hideBtn()
 const hideBtn = () =>{
     let height = window.scrollY
 
