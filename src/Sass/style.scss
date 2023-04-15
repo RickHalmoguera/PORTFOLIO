@@ -29,7 +29,7 @@ body{
 
 .sticky{
     position: sticky;
-    display: inline;
+    display: none;
     bottom: 20px;
     left: 100%;
     z-index: 1000;
@@ -122,9 +122,7 @@ body{
             flex-direction: column;
             justify-content: space-evenly
         }
-        textarea{
-
-        }
+      
     }
 
     &__links{
