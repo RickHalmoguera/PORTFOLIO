@@ -7,11 +7,22 @@ body{
     margin: 0;
     background-color:#4E4A4E ;
 }
+
+
+
 .rpgui-content{
     max-width: 1500px;
     position: relative;
 
+    h1{
+        font-size: 1.5rem;
+        line-height: 40px;
+    }
 
+    h2{
+        font-size: 1.3rem;
+        line-height: 40px;
+    }
     @media (min-width:1050px){
         display: grid;
         grid-template-columns: .5fr 1fr;
@@ -21,8 +32,35 @@ body{
         'intro projects'
         'about projects'
         'links projects'
+        
     }
 }
+
+@media (min-width:1050px){
+    .rpgui-content{
+        display: grid;
+        grid-template-columns: .5fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+        'name name'
+        'intro projects'
+        'about projects'
+        'links projects';
+    
+        h1{
+            font-size: 2rem;
+            line-height: 40px;
+        }
+    
+        h2{
+            font-size: 2rem;
+            line-height: 40px;
+        }
+      
+    }
+
+}
+
 #Name{grid-area: name;}
 #Intro{grid-area: intro}
 #About{grid-area: about}
@@ -51,7 +89,7 @@ body{
 }
 
 .rpgui-content textarea{
-    height: 300px;
+    min-height: 300px;
     @media (min-width:600px){
         height: 180px;
     }
@@ -91,13 +129,7 @@ body{
     flex-direction: column;
     gap: 1em;
 
-    &__titleXXL{
-        font-size: 3rem!important
-    }
-
-    &__subTitleXL{
-        font-size: 1.5rem!important
-    }
+   
     &__divider{
         width: 100%;
     }
