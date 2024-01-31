@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/rpgui/rpgui.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="./src/rpgui/rpgui.js"></script>
+    
+    <title>Ricardo Halmoguera Portfolio</title>
+</head>
+<body>
+    <div class="rpgui-content">
+
+        <div class="rpgui-container framed menu" id="Menu">
+            <a class="menu__link" href="#Intro">
+                <button class="rpgui-button" type="button"><p>Intro</p></button>
+            </a>
+            <a class="menu__link" href="#About">
+                <button class="rpgui-button" type="button"><p>About</p></button>
+            </a>
+            <a class="menu__link" href="#Projects">
+                <button class="rpgui-button" type="button"><p>Projects</p></button>
+            </a>
+            <a class="menu__link" href="#Links">
+                <button class="rpgui-button" type="button"><p>Links</p></button>
+            </a>
+        </div>
+        <div class="rpgui-container framed card" id="Name">
+            <h1 class="card__titleXXL">Ricardo Halmoguera</h1>
+            <h2 class="card__subTitleXL">FullStack Developer Jr.</h2>
+        </div>
+        <div class="rpgui-container framed card" id="Intro">
+            <h1 class="card__title">Hero info</h1>
+            <hr class="golden card__divider">
+            <img class="card__img" src="src/assets/idle.gif">
+            <div class="card__resumes">
+                <a class="menu__link" href="./src/assets/Ricardo Halmoguera Resume.pdf" target=”_blank”>
+                    <button class="rpgui-button" type="button"><p>CV En</p></button>
+                </a>
+                <a class="menu__link" href="./src/assets/Ricardo Halmoguera CV.pdf" target=”_blank”>
+                    <button class="rpgui-button" type="button"><p>CV Es</p></button>
+                </a>
+            </div>
+            <div class="card__content">
+                <label for="name">Hero name:</label>
+                <input name="name" value="Ricardo" disabled>
+                <label for="class">Hero class:</label>
+                <input name="class" value="Fullstack Developer Jr" disabled>
+                <label for="bio">Hero Bio:</label>
+                <textarea name="bio" disabled >As a junior full-stack developer, I excel in HTML, CSS, React, Redux, Node.js, Express.js, MySQL, MongoDB, RESTful API, and Python. Eager to contribute my skills,I bring a passion for crafting dynamic applications and a commitment to continuous learning in the fast-paced world of web development
+                </textarea>
+            </div>
+        </div>
+
+        <div class="rpgui-container framed card" id="About">
+            <h1 class="card__title">Hero Abilities</h1>
+            <hr class="golden card__divider">
+            <div class="card__content">
+                <label for="html">HTML</label>
+                <div id="htmlBar" data-value="0.9" name="html" class="rpgui-progress red"></div>
+                <label for="css">CSS</label>
+                <div id="cssBar" data-value="0.9" name="css" class="rpgui-progress blue" ></div>
+                <label for="js">JS</label>
+                <div id="jsBar" data-value="0.9" name="js" class="rpgui-progress yellow" ></div>
+                <label for="react">React</label>
+                <div id="reactBar" data-value="0.9" name="react" class="rpgui-progress blue" ></div>
+                <label for="git">Git / Github</label>
+                <div id="gitBar" data-value="0.6" name="git" class="rpgui-progress" ></div>
+                <label for="git">NodeJs</label>
+                <div id="gitBar" data-value="0.6" name="git" class="rpgui-progress green" ></div>
+                <label for="git">MongoDB</label>
+                <div id="gitBar" data-value="0.6" name="git" class="rpgui-progress green" ></div>
+                <label for="git">MySql</label>
+                <div id="gitBar" data-value="0.6" name="git" class="rpgui-progress red" ></div>
+            </div>
+        </div>
+
+        <div class="rpgui-container framed card" id="Projects">
+            <h1 class="card__title">Hero Achivements</h1>
+            <hr class="golden card__divider">
+            <div class="container">
+
+                <div class="rpgui-container framed-golden-2 card__project">
+                    <img class=" project__image" src="./src/assets/Hotel.png" alt="screenshot">
+                    <p class="project__title">Hotel Miranda HomePage</p>
+                    <p>Made with:</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Js</li>
+                        <li>SwiperJs</li>
+                    </ul>
+                    <div class="project__links">
+                        <a href="https://github.com/RickHalmoguera/HotelMiranda" target=”_blank”>
+                            <div class="rpgui-icon potion-red"></div>
+                            <p>Github</p>
+                        </a>
+                        <a href="https://rickhalmoguera.github.io/HotelMiranda/" target=”_blank”>
+                            <div class="rpgui-icon potion-blue"></div>
+                            <p>Live site</p>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="rpgui-container framed-golden-2 card__project">
+                    <img class=" project__image" src="./src/assets/dashboard.png" alt="screenshot">
+                    <p class="project__title">Hotel Miranda Dashboard</p>
+                    <p>Made with:</p>
+                    <ul>
+                        <li>React</li>
+                        <li>React-Redux</li>
+                        <li>React-Router</li>
+                        <li>Sass</li>
+                        <li>API</li>
+                    </ul>
+                    <div class="project__links">
+                        <a href="https://github.com/RickHalmoguera/DashBoard-Miranda" target=”_blank”>
+                            <div class="rpgui-icon potion-red"></div>
+                            <p>Github</p>
+                        </a>
+                        <a href="http://dashboadbucket.s3-website.eu-west-3.amazonaws.com/" target=”_blank”>
+                            <div class="rpgui-icon potion-blue"></div>
+                            <p>Live site</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="rpgui-container framed-golden-2 card__project">
+                    <img class=" project__image" src="./src/assets/shop.png" alt="screenshot">
+                    <p class="project__title">Oxygen Shop</p>
+                    <p>Made with:</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>Js</li>
+                        <li>Css</li>
+                        <li>BEM</li>
+                    </ul>
+                    <div class="project__links">
+                        <a href="https://github.com/RickHalmoguera/Oxygen-Shop" target=”_blank”>
+                            <div class="rpgui-icon potion-red"></div>
+                            <p>Github</p>
+                        </a>
+                        <a href="https://rickhalmoguera.github.io/Oxygen-Shop/" target=”_blank”>
+                            <div class="rpgui-icon potion-blue"></div>
+                            <p>Live site</p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="rpgui-container framed-golden-2 card__project" >
+                    <img class=" project__image" src="./src/assets/gallery.png" alt="screenshot">
+                    <p class="project__title">Photo Gallery</p>
+                    <p>Made with:</p>
+                    <ul>
+                        <li>React</li>
+                        <li>React-Redux</li>
+                        <li>React-Router</li>
+                        <li>API</li>
+                        <li>MUI Components</li>
+                    </ul>
+                    <div class="project__links">
+                        <a href="https://github.com/RickHalmoguera/Modulo-3-Photo-Gallery" target=”_blank”>
+                            <div class="rpgui-icon potion-red"></div>
+                            <p>Github</p>
+                        </a>
+                        <a href="http://photogalleryoxygen.s3-website.eu-west-3.amazonaws.com/" target=”_blank”>
+                            <div class="rpgui-icon potion-blue"></div>
+                            <p>Live site</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="rpgui-container framed card" id="Links">
+            <h1 class="card__title">Links</h1>
+            <hr class="golden card__divider">
+            <div class="card__links">
+                <a href="https://github.com/RickHalmoguera" target=”_blank”> 
+                    <img src="./src/assets/chest_Github.gif" alt="Github" >
+                    <p>Github</p>
+                </a>
+                <a href="https://www.linkedin.com/in/rhalmoguera/" target=”_blank”>
+                    <img src="./src/assets/chest_Linkedin.gif" alt="Linkedin">
+                    <p>Linkedin</p>
+                </a>
+                <a href="mailto:halmoguerar@gmail.com" target=”_blank”>
+                    <img src="./src/assets/chest_Gmail.gif" alt="Gmail">
+                    <p>Gmail</p>
+                </a>
+            </div>
+        </div>
+         
+        
+    </div>
+    <a href="#Menu" class="topBtn" >
+        <div class="rpgui-content sticky" id="topBtn">
+            <button class="rpgui-button small" type="button"><p>Top</p></button>
+        </div>
+    </a>
+    <script src="./index.js"></script>
+</body>
+
+</html>
